@@ -13,7 +13,13 @@
   <h3>Test Nextページ</h3>
 
   <p>
-    次のページです。
+    保存データ一覧
   </p>
+  <ion-list>
+      <ion-item *ngFor="let item of dbitems">
+        <p>Name:{{item.name}}</p>
+        <p>Keyword:{{item.keyword}}</p>
+      </ion-item>
+  </ion-list>
 
 </ion-content>
